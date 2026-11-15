@@ -1,0 +1,188 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/home-esthetique-auto-a-domicile-partout-en-estrie",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/esthetique-auto-a-domicile",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/new-page-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/termes-conditions",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/soumission-gratuite",
+      "destination": "/#contact",
+      "permanent": true
+    },
+    {
+      "source": "/nos-forfaits",
+      "destination": "/#forfaits",
+      "permanent": true
+    },
+    {
+      "source": "/liste-de-prix-2025",
+      "destination": "/#forfaits",
+      "permanent": true
+    },
+    {
+      "source": "/forfait-signature",
+      "destination": "/#forfaits",
+      "permanent": true
+    },
+    {
+      "source": "/-propos",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/-propos-6",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/esthetique-auto-sherbrooke",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/esthetique-auto-magog",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/esthetique-auto-brompton",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/esthetique-auto-north-hately",
+      "destination": "/#apropos",
+      "permanent": true
+    },
+    {
+      "source": "/toutes-nos-services-ici",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/interieur-de-standard",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/interieur-premium",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/exterieur-standard",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/services-nettoyage-interieur",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/services-nettoyage-exterieur",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/nettoyage-interieur-exterieur-domicile",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/raviveur-de-lustre",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/polissage-correction-de-peinture",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/protection-nano-ceramique",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/shampoing-moteur",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/restauration-des-phares",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/traitement-du-pare-brise",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/nettoyage-helicoptere",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/nettoyage-decontamination-et-cirage",
+      "destination": "/blogue/decontamination-peinture-chimique-physique.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/portail-des-cheveux-anges",
+      "destination": "/#services",
+      "permanent": true
+    },
+    {
+      "source": "/blog/detailing-auto-quebec-pourquoi-et-pour-qui",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    }
+  ]
+}

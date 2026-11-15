@@ -1,0 +1,27 @@
+Ancien nom -> nouveau nom
+IMG_2153.jpg -> ferrari-purosangue-noir-avant.jpg
+IMG_2154.jpg -> ferrari-purosangue-noir-arriere.jpg
+IMG_2155.jpg -> porsche-cayenne-coupe-blanc-avant.jpg
+IMG_2156.jpg -> porsche-cayenne-coupe-blanc-arriere.jpg
+IMG_2157.jpg -> lamborghini-urus-vert-avant.jpg
+IMG_2158.jpg -> lamborghini-urus-vert-arriere.jpg
+IMG_2159.jpg -> mercedes-amg-glc-63-s-coupe-gris-avant.jpg
+IMG_2160.jpg -> mercedes-amg-glc-63-s-coupe-gris-arriere.jpg
+IMG_2161.jpg -> mercedes-amg-g-63-noir-avant.jpg
+IMG_2162.jpg -> mercedes-amg-g-63-noir-arriere.jpg
+IMG_2163.jpg -> mercedes-benz-classe-g-blanc-avant.jpg
+IMG_2164.jpg -> mercedes-benz-classe-g-blanc-arriere.jpg
+IMG_2165.jpg -> ford-super-duty-rouge-avant.jpg
+IMG_2166.jpg -> ford-super-duty-rouge-arriere.jpg
+IMG_2168.jpg -> gmc-hummer-ev-vus-noir-avant.jpg
+IMG_2169.jpg -> gmc-hummer-ev-vus-noir-arriere.jpg
+IMG_2170.jpg -> lotus-emira-noir-avant.jpg
+IMG_2171.jpg -> lotus-emira-noir-arriere.jpg
+IMG_2172.jpg -> porsche-911-carrera-4-rouge-avant.jpg
+IMG_2173.jpg -> porsche-911-carrera-4-rouge-arriere.jpg
+IMG_2174.jpg -> porsche-911-gt3-rs-rouge-avant.jpg
+IMG_2175.jpg -> porsche-911-gt3-rs-rouge-arriere.jpg
+IMG_2176.jpg -> lamborghini-huracan-evo-spyder-violet-avant.jpg
+IMG_2177.jpg -> lamborghini-huracan-evo-spyder-violet-arriere.jpg
+IMG_2179.jpg -> ferrari-f8-tributo-rouge-avant.jpg
+IMG_2180.jpg -> ferrari-f8-tributo-rouge-arriere.jpg

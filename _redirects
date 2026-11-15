@@ -1,0 +1,47 @@
+# Redirections de l'ancien site Squarespace vers le nouveau site (301 = permanent, conserve le référencement Google)
+
+# Accueil et pages générales
+/home-esthetique-auto-a-domicile-partout-en-estrie   /                 301
+/esthetique-auto-a-domicile                          /                 301
+/new-page-3                                          /                 301
+/termes-conditions                                   /                 301
+
+# Contact et soumission
+/contact                                             /#contact         301
+/soumission-gratuite                                 /#contact         301
+
+# Forfaits et prix
+/nos-forfaits                                        /#forfaits        301
+/liste-de-prix-2025                                  /#forfaits        301
+/forfait-signature                                   /#forfaits        301
+
+# À propos et zones desservies
+/-propos                                             /#apropos         301
+/-propos-6                                           /#apropos         301
+/esthetique-auto-sherbrooke                          /#apropos         301
+/esthetique-auto-magog                               /#apropos         301
+/esthetique-auto-brompton                            /#apropos         301
+/esthetique-auto-north-hately                        /#apropos         301
+
+# Services
+/toutes-nos-services-ici                             /#services        301
+/interieur-de-standard                               /#services        301
+/interieur-premium                                   /#services        301
+/exterieur-standard                                  /#services        301
+/services-nettoyage-interieur                        /#services        301
+/services-nettoyage-exterieur                        /#services        301
+/nettoyage-interieur-exterieur-domicile              /#services        301
+/raviveur-de-lustre                                  /#services        301
+/polissage-correction-de-peinture                    /#services        301
+/protection-nano-ceramique                           /#services        301
+/shampoing-moteur                                    /#services        301
+/restauration-des-phares                             /#services        301
+/traitement-du-pare-brise                            /#services        301
+/nettoyage-helicoptere                               /#services        301
+/nettoyage-decontamination-et-cirage                 /blogue/decontamination-peinture-chimique-physique.html   301
+
+# Blogue
+/blog/portail-des-cheveux-anges                      /#services        301
+/blog/detailing-auto-quebec-pourquoi-et-pour-qui     /                 301
+/blog/*                                              /                 301
+/blog                                                /                 301

@@ -1,0 +1,48 @@
+# Quirion Esthétique Mobile
+
+> Entreprise d'esthétique automobile mobile basée à Sherbrooke (Québec, Canada). Elle se déplace à domicile, sans frais, à Sherbrooke, Magog et dans les environs en Estrie (Cantons-de-l'Est). Certifiée Labocosmetica. Service en français et en anglais.
+
+- Téléphone : (819) 446-4971
+- Courriel : quirion.esthetique@gmail.com
+- Site : https://quirionesthetique.com/
+- Horaire : lundi au samedi, sur rendez-vous seulement
+- Zones desservies sans frais : Sherbrooke (incluant Fleurimont, Rock Forest, Lennoxville), Magog, Orford, Stoke, North Hatley, Waterville, Ascot Corner. Autres villes de l'Estrie : au cas par cas.
+- Exigences sur place : une cour privée avec une entrée d'eau; aucun effet personnel dans le véhicule.
+
+## Forfaits (tous les prix sont « à partir de », taxes en sus, en dollars canadiens)
+
+| Véhicule | Extérieur | Intérieur | Remise à neuf complète |
+|---|---|---|---|
+| Berline / Coupé | à partir de 100 $ (1 h 15) | à partir de 229 $ (3 h+) | à partir de 299 $ (4 h) |
+| VUS | à partir de 115 $ (1 h 30) | à partir de 269 $ (3 h 15+) | à partir de 349 $ (4 h 30) |
+| Pickup | à partir de 135 $ (1 h 45) | à partir de 329 $ (3 h 45) | à partir de 399 $ (5 h) |
+| Grand VUS / Camionnette / Mini-van | à partir de 145 $ (1 h 45) | à partir de 359 $ (4 h) | à partir de 449 $ (6 h) |
+
+- Extérieur : prélavage, jantes et pneus, lavage à la main, scellant de peinture (environ 4 mois), séchage complet, lustre à pneus.
+- Intérieur : aspiration complète, plastiques, nettoyage à la vapeur, vitres, tapis, contours de portes, extraction des sièges en tissu ou soin du cuir.
+
+## Polissage et protection (prix à partir de)
+
+- Correction de peinture (jusqu'à 3 étapes) : à partir de 349 $, 4 h+
+- Protection nano-céramique : à partir de 849 $, 8 h+
+- Scellant peinture : à partir de 89 $, 30 min
+
+## Extras (prix à partir de)
+
+- Poils d'animaux : à partir de 50 $
+- Décontamination de la peinture (dissolvant de fer) : à partir de 55 $
+- Clay bar (barre d'argile) : à partir de 35 $
+- Taches de sel (calcium) : à partir de 30 $
+- Shampoing moteur : à partir de 50 $
+- Ramassage de déchets : à partir de 25 $
+
+## Réalisations (exemples de véhicules traités)
+
+Ferrari F8 Tributo, Ferrari Purosangue, Lamborghini Huracán EVO Spyder, Lamborghini Urus, Porsche 911 GT3 RS, Porsche 911 Carrera 4, Porsche Cayenne Coupé, Mercedes-AMG G 63, Mercedes-Benz Classe G, Mercedes-AMG GLC 63 S Coupé, Lotus Emira, GMC Hummer EV, Ford Super Duty. Photos : https://quirionesthetique.com/#projets
+
+## Pages
+
+- [Accueil et services](https://quirionesthetique.com/): tous les services, prix, zones et FAQ sur une seule page
+- [Nos réalisations](https://quirionesthetique.com/#projets): photos des véhicules traités
+- [Guide : décontamination chimique vs clay bar](https://quirionesthetique.com/blogue/decontamination-peinture-chimique-physique.html): à quoi sert la décontamination de la peinture et pourquoi combiner dissolvant de fer et barre d'argile
+- [Questions fréquentes](https://quirionesthetique.com/#faq)
