@@ -455,12 +455,17 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
 .hvid .btn.o:hover{color:var(--red);border-color:var(--red)}
 .hero p.sub-std{color:rgba(255,255,255,.85);text-transform:uppercase;letter-spacing:.14em;font-size:.95rem;max-width:none}
 .hero p.sub-std b{font-weight:600;color:var(--red)}
-.mq{margin-top:26px;padding:16px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.proof{display:flex;flex-wrap:wrap;gap:18px 48px;margin-top:34px}
+.pf{display:flex;align-items:center;gap:14px}
+.pfn{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(2.4rem,4vw,3.2rem);line-height:1;color:#fff}
+.pfs{color:#f5b301;font-family:inherit;font-size:clamp(1.2rem,2vw,1.55rem);letter-spacing:.08em}
+.pf span{color:rgba(255,255,255,.82);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.45;padding-left:14px;border-left:1px solid rgba(255,255,255,.25)}
+.mq{margin-top:clamp(40px,7vh,72px);padding:11px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .mqt{display:flex;width:max-content;animation:mq 32s linear infinite}
 .mq:hover .mqt{animation-play-state:paused}
 .mq ul{display:flex;margin:0;padding:0;list-style:none}
-.mq li{white-space:nowrap;padding:0 28px;font-family:"Bebas Neue",sans-serif;font-size:clamp(1.3rem,2.4vw,1.9rem);letter-spacing:.06em;color:#fff}
-.mq li:after{content:"✦";color:var(--red);margin-left:56px;font-size:.7em;vertical-align:middle}
+.mq li{white-space:nowrap;padding:0 20px;font-family:"Bebas Neue",sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);letter-spacing:.06em;color:#fff}
+.mq li:after{content:"✦";color:var(--red);margin-left:40px;font-size:.65em;vertical-align:middle}
 @keyframes mq{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.mqt{animation:none;width:auto}.mq ul{flex-wrap:wrap;row-gap:8px}.mq ul[aria-hidden]{display:none}.mq{-webkit-mask:none;mask:none}}
 .hvid .facts{color:rgba(255,255,255,.78);border-top-color:rgba(255,255,255,.18)}
@@ -487,7 +492,8 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
   <h1><span class="badge">Leader en esthétique automobile de luxe à domicile · Sherbrooke · Magog</span><span class="h1s">L'esthétique auto qui vient <em>à vous</em></span></h1>
   <p class="sub sub-std"><b>Quirion Esthétique</b> — Optez pour les standards les plus élevés en Estrie.</p>
   <div class="hb"><button class="btn" data-s="">Réserver maintenant</button><a class="btn o" href="#forfaits">Voir les forfaits</a></div>
-  <div class="mq" role="region" aria-label="Nos services"><div class="mqt"><ul><li>Remise à neuf</li><li>Nettoyage intérieur</li><li>Nettoyage extérieur</li><li>Décontamination</li><li>Scellant à peinture</li><li>Nano-céramique</li><li>Pellicule pare-pierre (PPF)</li></ul><ul aria-hidden="true"><li>Remise à neuf</li><li>Nettoyage intérieur</li><li>Nettoyage extérieur</li><li>Décontamination</li><li>Scellant à peinture</li><li>Nano-céramique</li><li>Pellicule pare-pierre (PPF)</li></ul></div></div>
+  <div class="proof"><div class="pf"><b class="pfn">5+</b><span>ans d'expérience<br>en Estrie</span></div><div class="pf"><b class="pfn pfs" aria-label="5 étoiles">★★★★★</b><span>Uniquement des avis<br>5 étoiles</span></div></div>
+  <div class="mq" role="region" aria-label="Nos services"><div class="mqt"><ul><li>Remise à neuf</li><li>Polissage</li><li>Nettoyage intérieur</li><li>Nano-céramique</li><li>Décontamination</li><li>Pellicule pare-pierre (PPF)</li><li>Nettoyage extérieur</li><li>Correction de peinture</li><li>Scellant à peinture</li></ul><ul aria-hidden="true"><li>Remise à neuf</li><li>Polissage</li><li>Nettoyage intérieur</li><li>Nano-céramique</li><li>Décontamination</li><li>Pellicule pare-pierre (PPF)</li><li>Nettoyage extérieur</li><li>Correction de peinture</li><li>Scellant à peinture</li></ul></div></div>
 </div>
 
 <section id="projets"><div class="w">
@@ -937,6 +943,11 @@ Quirion Esthétique|Quirion Esthétique
 — Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
 Scellant à peinture|Paint sealant
 Nos services|Our services
+ans d'expérience|years of experience
+en Estrie|in the Eastern Townships
+Uniquement des avis|Only
+5 étoiles|5-star reviews
+Polissage|Polishing
 Nano-céramique|Nano-ceramic coating
 Pellicule pare-pierre (PPF)|Paint protection film (PPF)
 Ce que c'est, ce qu'on peut corriger, les 3 niveaux et notre processus, expliqués simplement.|What it is, what we can correct, the 3 levels and our process, explained simply.
