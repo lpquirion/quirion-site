@@ -322,6 +322,14 @@ a.nhrc:hover{border-color:var(--red)}
 .nhef img{display:block;width:100%;height:auto;max-height:720px;object-fit:cover;object-position:center 30%}
 .nhef figcaption{position:absolute;left:16px;bottom:16px;padding:8px 14px;border-radius:6px;background:rgba(0,0,0,.65);font-size:.85rem}
 @media(max-width:760px){.nheh{grid-template-columns:1fr}}
+.nhem{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}
+.nhem figure{margin:0;border-radius:10px;overflow:hidden;background:#141414;border:1px solid rgba(255,255,255,.1)}
+.nhem img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 22%}
+.nhem figcaption{padding:16px 18px;display:flex;flex-direction:column;gap:3px}
+.nhem figcaption b{font-weight:600}
+.nhem figcaption span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+@media(max-width:700px){.nhem{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.nhem{grid-template-columns:1fr}}
 .trust{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
 .trust li{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
 .trust li:before{content:"✓";color:var(--red);font-weight:600;margin-right:9px}
@@ -937,6 +945,8 @@ Quirion Esthétique|Quirion Esthétique
 — Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
 Scellant à peinture|Paint sealant
 Nos services|Our services
+Propriétaire et fondateur|Owner and founder
+Technicien|Technician
 Notre équipe|Our team
 Les gens derrière|The people behind
 chaque fini|every finish
