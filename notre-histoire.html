@@ -302,6 +302,41 @@ a.ns-t i{color:#f5b301;letter-spacing:.14em;font-size:1rem}
 .ns-exp-g span{color:var(--mut);font-size:.95rem;line-height:1.6}
 @media(max-width:900px){.ns-exp-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.ns-exp-g{grid-template-columns:1fr}}
+.sim{margin:clamp(40px,6vw,72px) 0;border-radius:18px;background:radial-gradient(120% 90% at 50% 0%,#24262a 0%,#0c0c0d 60%);color:#fff;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.sim-in{padding:clamp(22px,4vw,44px)}
+.sim-hd .eb{color:var(--red)}
+.sim-hd h3{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1;text-transform:uppercase;margin:0 0 10px}
+.sim-hd h3 em{font-style:normal;color:var(--red)}
+.sim-hd p{color:rgba(255,255,255,.7);margin:0}
+.sim-stage{position:relative;margin:22px 0 18px;border-radius:14px;background:linear-gradient(180deg,#e9eaec 0%,#cfd2d6 70%,#b9bcc1 100%);padding:clamp(34px,6vw,60px) clamp(8px,3vw,28px) clamp(10px,2vw,18px)}
+.sim-badge{position:absolute;left:16px;top:14px;background:#0c0c0d;color:var(--red);font-family:"Bebas Neue",sans-serif;font-size:1.35rem;letter-spacing:.04em;padding:6px 14px 4px;border-radius:999px}
+.sim-car{display:block;width:100%;height:auto}
+.sim-car .z{transition:fill .35s,stroke .35s}
+.sim-car .z-paint.on{fill:url(#simBodyOn);stroke:#f31f1f}
+.sim-car .z-trim.on{fill:#a3191e}
+.sim-car .z-glass.on{fill:#7c1820}
+.sim-car .z-barrel.on{fill:#b3161b}
+.sim-car .z-rim.on{stroke:#f31f1f}
+.sim-lv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.sim-lv button{font:inherit;text-align:left;padding:16px 18px;border-radius:12px;background:#141416;border:1px solid rgba(255,255,255,.12);color:#fff;cursor:pointer;display:flex;flex-direction:column;gap:12px;min-height:44px;transition:background .2s,border-color .2s,color .2s}
+.sim-lv button:hover{border-color:rgba(255,255,255,.35)}
+.sim-lv button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.sim-lv b{font-weight:600;font-size:1.05rem}
+.sim-lv i{display:flex;gap:6px}
+.sim-lv s{display:block;width:26px;height:6px;border-radius:3px;background:#3a3c41}
+.sim-lv button[data-lv="0"] s:nth-child(-n+1),.sim-lv button[data-lv="1"] s:nth-child(-n+2),.sim-lv button[data-lv="2"] s{background:var(--red)}
+.sim-lv button[aria-checked="true"]{background:var(--red);border-color:var(--red)}
+.sim-lv button[aria-checked="true"] s{background:rgba(255,255,255,.35)}
+.sim-lv button[aria-checked="true"][data-lv="0"] s:nth-child(-n+1),.sim-lv button[aria-checked="true"][data-lv="1"] s:nth-child(-n+2),.sim-lv button[aria-checked="true"][data-lv="2"] s{background:#fff}
+.sim-zones{list-style:none;margin:18px 0 22px;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.sim-zones li{font-size:.9rem;color:rgba(255,255,255,.38);transition:color .25s}
+.sim-zones li:before{content:"–";display:inline-block;width:18px;color:rgba(255,255,255,.3)}
+.sim-zones li.on{color:#fff}
+.sim-zones li.on:before{content:"✓";color:var(--red);font-weight:600}
+.sim-cta{display:block;width:100%;text-align:center}
+.sim-more{background:none;border:0;padding:0;cursor:pointer;font:inherit}
+@media(max-width:520px){.sim{margin-inline:calc(-1*max(0px,min(5vw,16px)))}.sim-in{padding:22px 14px}.sim-stage{padding:52px 4px 8px;margin:18px 0 14px}.sim-badge{font-size:1.1rem;left:12px;top:10px}.sim-lv{gap:6px}.sim-lv button{padding:12px 10px;gap:10px}.sim-lv s{width:14px;height:5px}.sim-lv b{font-size:.85rem;white-space:nowrap}.sim-zones{gap:6px 14px}.sim-zones li{font-size:.85rem}}
+@media(prefers-reduced-motion:reduce){.sim-car .z,.sim-lv button,.sim-zones li{transition:none}}
 .trust{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
 .trust li{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
 .trust li:before{content:"✓";color:var(--red);font-weight:600;margin-right:9px}
@@ -812,7 +847,7 @@ let pend="";const md=$("#md");
 document.addEventListener("click",e=>{const b=e.target.closest("[data-s]");if(b){pend=b.dataset.s;md.showModal()}});
 $("#cl").onclick=()=>md.close();
 md.addEventListener("click",e=>{if(e.target===md)md.close()});
-$("#go").onclick=()=>{if(!document.getElementById("contact")){try{sessionStorage.setItem("qpend",pend)}catch(e){}location.href="index.html#contact";return}md.close();prefill(pend);go("contact");setTimeout(()=>$(".fm").scrollIntoView({behavior:"smooth",block:"start"}),300)};
+$("#go").onclick=()=>{if(!document.getElementById("contact")){try{sessionStorage.setItem("qpend",pend)}catch(e){}location.href="index.html#contact";return}md.close();prefill(pend);if(window.QSIM){const f=$("#fx");if(!f.value.includes(window.QSIM))f.value=(window.QSIM+"\n"+f.value).trim();window.QSIM=""}go("contact");setTimeout(()=>$(".fm").scrollIntoView({behavior:"smooth",block:"start"}),300)};
 $("#fz").onclick=()=>go("apropos","zone");
 function leadData(){const c=calc(),d=new Date();
 hv("vehicule",c.veh);hv("forfait",c.pk);hv("protections",c.pr.join(", "));hv("extras",c.ex.join(", "));
@@ -994,6 +1029,22 @@ Quirion Esthétique|Quirion Esthétique
 — Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
 Scellant à peinture|Paint sealant
 Nos services|Our services
+Choisissez votre|Choose your
+niveau de protection|level of protection
+Touchez un niveau pour voir les zones protégées sur le véhicule.|Tap a level to see the protected areas on the vehicle.
+Niveau 1|Level 1
+Niveau 2|Level 2
+Niveau 3|Level 3
+Peinture|Paint
+Moulures et plastiques|Trim and plastics
+Face des jantes|Wheel faces
+Pare-brise|Windshield
+Jantes complètes (démontées)|Complete wheels (wheels off)
+Toutes les vitres|All glass
+Demander le niveau 1|Request level 1
+Demander le niveau 2|Request level 2
+Demander le niveau 3|Request level 3
+Voir les 3 niveaux ↓|See the 3 levels ↓
 Notre expertise|Our expertise
 Pas de simples laveurs d'autos.|Not just car washers.
 Des experts.|Experts.
@@ -1563,6 +1614,24 @@ const h0=location.hash.slice(1);go(PG[h0]?h0:"accueil",null,true);
 
 // Menu déroulant « À propos »
 document.querySelectorAll(".amn").forEach(d=>{const b=d.querySelector(".amb");const set=o=>{d.classList.toggle("open",o);b.setAttribute("aria-expanded",o)};b.addEventListener("click",e=>{e.stopPropagation();set(!d.classList.contains("open"))});d.addEventListener("keydown",e=>{if(e.key==="Escape"){set(false);b.focus()}});document.addEventListener("click",e=>{if(!d.contains(e.target))set(false)});d.addEventListener("focusout",e=>{if(!d.contains(e.relatedTarget))set(false)})});
+
+// Simulateur de protection nano-céramique (réutilisable pour la pellicule pare-pierre)
+{const sim=document.getElementById("simulateur-nano");if(sim){
+const LV=[["paint","trim"],["paint","trim","wface","wind"],["paint","trim","wface","wfull","wind","glass"]];
+const NM=["Niveau 1","Niveau 2","Niveau 3"];let cur=0;
+const show=i=>{cur=i;const z=LV[i];
+sim.querySelectorAll(".sim-car .z").forEach(el=>el.classList.toggle("on",el.dataset.z.split(" ").some(k=>z.includes(k))));
+sim.querySelectorAll(".sim-zones li").forEach(li=>li.classList.toggle("on",z.includes(li.dataset.k)));
+sim.querySelectorAll(".sim-lv button").forEach(b=>b.setAttribute("aria-checked",+b.dataset.lv===i));
+$("#sim-badge").textContent=T(NM[i]);
+const c=$("#sim-cta");c.textContent=T("Demander le niveau "+(i+1))+" →";
+c.dataset.simnote=`Protection nano-céramique · ${NM[i]} (${[...sim.querySelectorAll(".sim-zones li.on")].map(l=>l.textContent).join(", ")})`};
+sim.querySelector(".sim-lv").addEventListener("click",e=>{const b=e.target.closest("[data-lv]");if(b)show(+b.dataset.lv)});
+sim.querySelector(".sim-lv").addEventListener("keydown",e=>{if(!/Arrow(Left|Right|Up|Down)/.test(e.key))return;e.preventDefault();const n=(cur+(/Right|Down/.test(e.key)?1:2))%3;show(n);sim.querySelector(`[data-lv="${n}"]`).focus()});
+document.querySelectorAll(".sim-more").forEach(b=>b.addEventListener("click",()=>sim.scrollIntoView({behavior:"smooth",block:"start"})));
+document.addEventListener("click",e=>{const b=e.target.closest("[data-s]");if(b)window.QSIM=b.dataset.simnote||""});
+document.querySelectorAll(".lg button").forEach(b=>b.addEventListener("click",()=>show(cur)));
+show(0)}}
 
 // Langue mémorisée entre les pages; service choisi sur une autre page
 try{if(localStorage.getItem("ql")==="en")setL("en")}catch(e){}
