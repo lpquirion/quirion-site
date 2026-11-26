@@ -102,7 +102,6 @@ h2{font-size:clamp(2.3rem,6vw,4.6rem)}
 .pp{display:flex;align-items:flex-end;gap:10px}
 .fr{color:var(--mut);font-size:.9rem;line-height:1.3;padding-bottom:12px}
 .fr small{display:block;font-size:.75rem}
-.amt{font-size:clamp(3.6rem,7vw,5.4rem);font-weight:300;line-height:1}
 .dd{display:inline-block;margin:14px 0 22px;border:1px solid var(--ln);padding:3px 12px;font-size:.85rem;color:var(--red)}
 .pc ul{list-style:none;padding:22px 0 0;border-top:1px solid var(--ln);display:grid;gap:12px;color:var(--mut);margin-bottom:28px}
 .pc li{padding-left:24px;position:relative;font-size:.97rem;line-height:1.4}
@@ -199,40 +198,22 @@ dialog .x{display:block;margin:14px auto 0;background:none;border:0;color:var(--
 .amb:hover,.amn.open .amb,.amb.on{color:var(--red)}
 .amb.on{border-color:var(--red)}
 .amn.open .amb:after{transform:translateY(0) rotate(-135deg)}
-.amp{position:absolute;left:0;right:0;top:100%;padding:0 max(2vw,12px);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;z-index:40}
 .amn.open .amp{opacity:1;visibility:visible;transform:none}
-.amw{max-width:1240px;margin:10px auto 0;display:grid;grid-template-columns:1fr 1.1fr 1.35fr;gap:clamp(20px,3vw,44px);padding:clamp(22px,3vw,38px);background:#0d0d0e;color:#fff;border:1px solid rgba(255,255,255,.1);border-radius:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
-.amw .eb{color:rgba(255,255,255,.6);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
-.am1{padding-right:clamp(14px,2vw,30px);border-right:1px solid rgba(255,255,255,.12)}
-.amh{font-family:"Bebas Neue",sans-serif;font-size:clamp(2rem,3vw,2.6rem);line-height:1;margin:0 0 14px;text-transform:uppercase}
-.amh em{font-style:normal;color:var(--red)}
-.amt{color:rgba(255,255,255,.75);font-size:.95rem;line-height:1.6;margin:0 0 20px}
-.amm,.am3 u{color:#fff;text-decoration:none;border-bottom:1px solid var(--red);padding-bottom:3px;font-size:.85rem;letter-spacing:.06em}
-.amm:after,.am3 u:after{content:" →";color:var(--red)}
-.aml{display:block;padding:16px 18px;border-left:2px solid transparent;border-radius:6px;color:#fff;text-decoration:none;transition:background .2s,border-color .2s}
-.aml+.aml{margin-top:6px}
-.aml:hover,.aml:focus-visible{background:rgba(255,255,255,.06);border-left-color:var(--red)}
-.aml b{display:block;font-weight:600;font-size:1.05rem;margin-bottom:4px}
-.aml span{color:rgba(255,255,255,.68);font-size:.88rem}
-.am3{position:relative;display:block;border-radius:8px;overflow:hidden;min-height:230px;color:#fff;text-decoration:none}
-.am3 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.am3:hover img{transform:scale(1.04)}
-.am3:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.82))}
-.amc{position:absolute;left:22px;bottom:20px;z-index:1;display:flex;flex-direction:column;gap:4px}
-.amc small{font-size:.8rem;color:rgba(255,255,255,.8)}
-.amc b{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:2rem;line-height:1;margin-bottom:6px}
 @media(hover:hover) and (min-width:901px){.amn:hover .amp{opacity:1;visibility:visible;transform:none}.amn:hover .amb:after{transform:translateY(0) rotate(-135deg)}}
-@media(max-width:900px){.amw{grid-template-columns:1fr;max-height:calc(100vh - 140px);overflow:auto}.am1{border-right:0;padding-right:0}.am3{min-height:170px}}
-@media(max-width:600px){.amb{font-size:.64rem;letter-spacing:.07em}.am1 .amt,.am1 .amm{display:none}}
-@media(prefers-reduced-motion:reduce){.amp,.am3 img{transition:none}}
+@media(max-width:600px){.amb{font-size:.64rem;letter-spacing:.07em}}
+.amt{font-size:clamp(3.6rem,7vw,5.4rem);font-weight:300;line-height:1}
+.amn{position:relative}
+.amp{position:absolute;left:-18px;top:calc(100% + 10px);min-width:230px;padding:8px;background:#0d0d0e;border:1px solid rgba(255,255,255,.12);border-radius:8px;box-shadow:0 20px 40px -16px rgba(0,0,0,.55);display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:40}
+.amn.open .amp{opacity:1;visibility:visible;transform:none}
+.amp:before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.nav ul .amp a.aml{display:block;padding:12px 14px;border-radius:6px;color:#fff;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;border-bottom:0}
+.nav ul .amp a.aml:hover,.nav ul .amp a.aml:focus-visible{background:rgba(255,255,255,.07);color:var(--red)}
+@media(hover:hover) and (min-width:861px){.amn:hover .amp{opacity:1;visibility:visible;transform:none}}
+@media(max-width:860px){.amn{position:static}.amp{left:auto;right:max(3vw,12px);top:100%}}
+@media(prefers-reduced-motion:reduce){.amp{transition:none}}
 .nav ul{align-items:center}
 .nav .amb{border:0;border-bottom:1px solid transparent;border-radius:0;background:none;box-shadow:none;padding:6px 0;margin:0;min-height:0}
 .nav .amb.on{border-bottom-color:var(--red)}
-.nav ul .amp a{font-size:inherit;letter-spacing:normal;text-transform:none;color:#fff;white-space:normal;border-bottom:0;padding:0}
-.nav ul .amp a.aml{padding:16px 18px;border-left:2px solid transparent}
-.nav ul .amp a.aml:hover,.nav ul .amp a.aml:focus-visible{border-left-color:var(--red)}
-.nav ul .amp a.amm,.nav ul .amp .am3 u{border-bottom:1px solid var(--red);padding-bottom:3px;font-size:.85rem;letter-spacing:.06em}
-.nav ul .amp .eb{white-space:nowrap}
 .phd{background:#0a0a0a;color:#fff;padding:clamp(64px,10vw,120px) max(5vw,16px) clamp(40px,6vw,72px)}
 .phd .w{max-width:1100px;margin:0 auto}
 .phd .eb{color:var(--red)}
@@ -314,6 +295,14 @@ a.ns-t i{color:#f5b301;letter-spacing:.14em;font-size:1rem}
 .ns-next-l span{color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.55}
 .ns-next+.pcta{border-top:1px solid rgba(255,255,255,.1)}
 @media(max-width:760px){.ns-next-g{grid-template-columns:1fr}}
+.ns-exp{padding:0 max(5vw,16px) clamp(64px,9vw,110px)}
+.ns-exp-g{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:12px;overflow:hidden}
+.ns-exp-g li{background:var(--bg);padding:28px 26px 30px;display:flex;flex-direction:column;gap:8px}
+.ns-exp-g b{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:1.7rem;line-height:1;letter-spacing:.02em}
+.ns-exp-g b:before{content:"";display:block;width:28px;height:2px;background:var(--red);margin-bottom:16px}
+.ns-exp-g span{color:var(--mut);font-size:.95rem;line-height:1.6}
+@media(max-width:900px){.ns-exp-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.ns-exp-g{grid-template-columns:1fr}}
 .trust{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
 .trust li{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
 .trust li:before{content:"✓";color:var(--red);font-weight:600;margin-right:9px}
@@ -603,7 +592,7 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
 <div class="sp" aria-hidden="true"><i></i><span class="van"><img src="images/transit-connect.png" alt="" width="240" height="99" decoding="async"></span></div>
 <header class="nav">
   <a class="brand qb" href="index.html" aria-label="Quirion Esthétique Mobile, accueil"><span class="logo" aria-hidden="true"></span><span class="bt" aria-hidden="true">Quirion Esthétique</span></a>
-  <ul><li><a href="index.html">Accueil</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#forfaits">Forfaits</a></li><li class="amn"><button class="amb on" type="button" aria-expanded="false" aria-controls="amp-apropos">À propos</button><div class="amp" id="amp-apropos"><div class="amw"><div class="am1"><div class="eb">Quirion Esthétique</div><p class="amh">Le soin d'un atelier, <em>à votre porte.</em></p><p class="amt">Découvrez qui nous sommes, notre façon de travailler et les véhicules qu'on remet à neuf.</p><a class="amm" href="notre-histoire.html">Découvrir Quirion</a></div><div class="am2"><div class="eb">À propos</div><a class="aml" href="notre-histoire.html"><b>Notre histoire</b><span>Qui nous sommes et pourquoi on vient à vous.</span></a><a class="aml" href="realisations.html"><b>Nos réalisations</b><span>Les véhicules qu'on a remis à neuf.</span></a></div><a class="am3" href="notre-histoire.html"><img src="images/equipe/camion-quirion.jpg" alt="Le camion Ford Transit Connect lettré de Quirion Esthétique" width="1000" height="681" loading="lazy" decoding="async"><span class="amc"><small>Qui sommes-nous</small><b>Notre histoire</b><u>Lire notre histoire</u></span></a></div></div></li><li><a href="index.html#contact">Contact</a></li></ul>
+  <ul><li><a href="index.html">Accueil</a></li><li><a href="index.html#services">Services</a></li><li><a href="index.html#forfaits">Forfaits</a></li><li class="amn"><button class="amb on" type="button" aria-expanded="false" aria-controls="amp-apropos">À propos</button><div class="amp" id="amp-apropos"><a class="aml" href="notre-histoire.html">Notre histoire</a><a class="aml" href="realisations.html">Nos réalisations</a></div></li><li><a href="index.html#contact">Contact</a></li></ul>
   <div class="nr"><div class="lg" role="group" aria-label="Langue"><button data-l="fr" aria-pressed="true">FR</button><button data-l="en" aria-pressed="false">EN</button></div><button class="th" id="th" aria-label="Changer le thème">◐</button><button class="btn" data-s="">Réserver</button></div>
 </header>
 
@@ -623,6 +612,19 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
     <p>Quirion Esthétique est née d'une idée simple : offrir le soin d'un atelier de détail, directement dans votre entrée. Depuis plus de 5 ans, on se déplace partout à Sherbrooke, à Magog et dans les environs.</p>
     <p>Chaque traitement est ajusté à l'état, aux matériaux et aux besoins de votre véhicule. Rien d'inutile, rien de bâclé.</p>
   </div>
+</div></section>
+
+<section class="ns-exp"><div class="ns-w">
+  <div class="ns-head"><div><div class="eb">Notre expertise</div><h2>Pas de simples laveurs d'autos. <em>Des experts.</em></h2></div>
+  <p>Chaque surface a ses règles. Avec des années d'expérience dans notre sac, on adapte nos produits et nos techniques à tous les types de peintures et de protections, sans jamais les abîmer.</p></div>
+  <ul class="ns-exp-g">
+    <li><b>Wraps de vinyle</b><span>Des produits et des méthodes sans risque pour le vinyle, ses rebords et ses joints.</span></li>
+    <li><b>Pellicule pare-pierre (PPF)</b><span>Un nettoyage qui préserve la clarté de la pellicule sans en soulever les bords.</span></li>
+    <li><b>Nano-céramique</b><span>Des produits compatibles qui entretiennent l'effet hydrophobe au lieu de l'user.</span></li>
+    <li><b>Peintures anciennes</b><span>Des techniques douces pour les peintures d'origine, plus minces ou oxydées.</span></li>
+    <li><b>Finis mats et satinés</b><span>Aucun lustre ni polissage qui changerait l'aspect d'un fini mat.</span></li>
+    <li><b>Et plus encore</b><span>Un fini ou une protection particulière ? On vous dit franchement comment on va s'en occuper.</span></li>
+  </ul>
 </div></section>
 
 <section class="ns-trust"><div class="ns-w">
@@ -993,6 +995,20 @@ Quirion Esthétique|Quirion Esthétique
 — Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
 Scellant à peinture|Paint sealant
 Nos services|Our services
+Notre expertise|Our expertise
+Pas de simples laveurs d'autos.|Not just car washers.
+Des experts.|Experts.
+Chaque surface a ses règles. Avec des années d'expérience dans notre sac, on adapte nos produits et nos techniques à tous les types de peintures et de protections, sans jamais les abîmer.|Every surface has its own rules. With years of experience behind us, we adapt our products and techniques to every type of paint and protection, without ever damaging them.
+Wraps de vinyle|Vinyl wraps
+Des produits et des méthodes sans risque pour le vinyle, ses rebords et ses joints.|Products and methods that are safe for vinyl, its edges and seams.
+Un nettoyage qui préserve la clarté de la pellicule sans en soulever les bords.|Cleaning that preserves the film's clarity without lifting its edges.
+Des produits compatibles qui entretiennent l'effet hydrophobe au lieu de l'user.|Compatible products that maintain the hydrophobic effect instead of wearing it down.
+Peintures anciennes|Older paint
+Des techniques douces pour les peintures d'origine, plus minces ou oxydées.|Gentle techniques for original, thinner or oxidized paint.
+Finis mats et satinés|Matte and satin finishes
+Aucun lustre ni polissage qui changerait l'aspect d'un fini mat.|No gloss or polishing that would change the look of a matte finish.
+Et plus encore|And more
+Un fini ou une protection particulière ? On vous dit franchement comment on va s'en occuper.|A special finish or protection? We'll tell you straight how we'll take care of it.
 On apporte tout,|We bring everything,
 littéralement|literally
 Notre camion est un atelier complet sur quatre roues. Vous n'avez rien à préparer : on arrive avec tout ce qu'il faut et vous continuez votre journée.|Our van is a complete workshop on four wheels. There's nothing for you to prepare: we arrive with everything we need and you carry on with your day.
