@@ -308,15 +308,21 @@ a.ns-t i{color:#f5b301;letter-spacing:.14em;font-size:1rem}
 .sim-hd h3{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1;text-transform:uppercase;margin:0 0 10px}
 .sim-hd h3 em{font-style:normal;color:var(--red)}
 .sim-hd p{color:rgba(255,255,255,.7);margin:0}
-.sim-stage{position:relative;margin:22px 0 18px;border-radius:14px;background:linear-gradient(180deg,#e9eaec 0%,#cfd2d6 70%,#b9bcc1 100%);padding:clamp(34px,6vw,60px) clamp(8px,3vw,28px) clamp(10px,2vw,18px)}
-.sim-badge{position:absolute;left:16px;top:14px;background:#0c0c0d;color:var(--red);font-family:"Bebas Neue",sans-serif;font-size:1.35rem;letter-spacing:.04em;padding:6px 14px 4px;border-radius:999px}
+.sim-stage{position:relative;margin:22px 0 18px;border-radius:14px;background:radial-gradient(80% 75% at 50% 45%,#1f2125 0%,#0d0e10 72%);border:1px solid rgba(255,255,255,.06);padding:clamp(34px,6vw,60px) clamp(8px,3vw,28px) clamp(10px,2vw,18px)}
+.sim-badge{position:absolute;left:16px;top:14px;background:rgba(243,31,31,.12);border:1px solid rgba(243,31,31,.5);color:#fff;font-family:"Bebas Neue",sans-serif;font-size:1.35rem;letter-spacing:.04em;padding:6px 14px 4px;border-radius:999px}
 .sim-car{display:block;width:100%;height:auto}
-.sim-car .z{transition:fill .35s,stroke .35s}
-.sim-car .z-paint.on{fill:url(#simBodyOn);stroke:#f31f1f}
-.sim-car .z-trim.on{fill:#a3191e}
-.sim-car .z-glass.on{fill:#7c1820}
-.sim-car .z-barrel.on{fill:#b3161b}
-.sim-car .z-rim.on{stroke:#f31f1f}
+.sim-car .z{fill:#15171a;stroke:rgba(255,255,255,.42);stroke-width:1.4;transition:fill .35s,stroke .35s,filter .35s}
+.sim-car .z-glass{fill:#0a0d12;stroke:rgba(255,255,255,.3)}
+.sim-car .z-trim{fill:#0f1012;stroke:rgba(255,255,255,.25)}
+.sim-car .z-barrel{fill:#101114;stroke:rgba(255,255,255,.18)}
+.sim-car .z-rim{fill:#1b1d21;stroke:rgba(255,255,255,.5)}
+.sim-car .sim-sp{fill:none;stroke-width:3;stroke-linecap:round}
+.sim-car .sim-tire{fill:#08090a;stroke:rgba(255,255,255,.22);stroke-width:1.4}
+.sim-car .sim-ln{fill:none;stroke:rgba(255,255,255,.22);stroke-width:1.2}
+.sim-car .z.on{fill:rgba(243,31,31,.22);stroke:#ff3b30;filter:drop-shadow(0 0 6px rgba(243,31,31,.55))}
+.sim-car .z-glass.on{fill:rgba(243,31,31,.32)}
+.sim-car .z-rim.on,.sim-car .z-barrel.on{fill:rgba(243,31,31,.35)}
+.sim-car .z-rim.on .sim-sp{fill:none}
 .sim-lv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .sim-lv button{font:inherit;text-align:left;padding:16px 18px;border-radius:12px;background:#141416;border:1px solid rgba(255,255,255,.12);color:#fff;cursor:pointer;display:flex;flex-direction:column;gap:12px;min-height:44px;transition:background .2s,border-color .2s,color .2s}
 .sim-lv button:hover{border-color:rgba(255,255,255,.35)}
