@@ -453,6 +453,16 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
 .hvid .sub b{color:#fff}
 .hvid .btn.o{color:#fff;border-color:rgba(255,255,255,.45)}
 .hvid .btn.o:hover{color:var(--red);border-color:var(--red)}
+.hero p.sub-std{text-transform:uppercase;letter-spacing:.14em;font-size:.95rem;max-width:none}
+.hero p.sub-std b{font-weight:600;color:var(--red)}
+.mq{margin-top:26px;padding:16px 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mqt{display:flex;width:max-content;animation:mq 32s linear infinite}
+.mq:hover .mqt{animation-play-state:paused}
+.mq ul{display:flex;margin:0;padding:0;list-style:none}
+.mq li{white-space:nowrap;padding:0 28px;font-family:"Bebas Neue",sans-serif;font-size:clamp(1.3rem,2.4vw,1.9rem);letter-spacing:.06em;color:#fff}
+.mq li:after{content:"✦";color:var(--red);margin-left:56px;font-size:.7em;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mqt{animation:none;width:auto}.mq ul{flex-wrap:wrap;row-gap:8px}.mq ul[aria-hidden]{display:none}.mq{-webkit-mask:none;mask:none}}
 .hvid .facts{color:rgba(255,255,255,.78);border-top-color:rgba(255,255,255,.18)}
 @media(max-aspect-ratio:4/5){.hv:after{background:linear-gradient(0deg,rgba(8,8,8,.9) 0%,rgba(8,8,8,.6) 48%,rgba(8,8,8,.28) 100%)}.hvid h1,.hvid .sub{text-shadow:0 2px 18px rgba(0,0,0,.55)}}
 /* Logo d'en-tête, proportions du logo officiel : texte sous la roue, à 26 % de la largeur, sur 94 % de la largeur */
@@ -475,9 +485,9 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
   <div class="hv" aria-hidden="true"><video class="hvv" muted loop playsinline autoplay preload="metadata" poster="images/video/accueil-ordinateur.jpg"></video></div>
   <span class="logo" aria-hidden="true"></span>
   <h1><span class="badge">Leader en esthétique automobile de luxe à domicile · Sherbrooke · Magog</span><span class="h1s">L'esthétique auto qui vient <em>à vous</em></span></h1>
-  <p class="sub"><b style="font-weight:500" data-b>Quirion Esthétique Mobile</b> : esthétique automobile mobile en Estrie. Lavage à la main, nettoyage intérieur, polissage et protection céramique, directement chez vous à Sherbrooke, Magog et les environs.</p>
+  <p class="sub sub-std"><b>Quirion Esthétique</b> — Optez pour les standards les plus élevés en Estrie.</p>
   <div class="hb"><button class="btn" data-s="">Réserver maintenant</button><a class="btn o" href="#forfaits">Voir les forfaits</a></div>
-  <div class="facts"><span>Service à domicile partout en Estrie</span><span>Produits professionnels</span><span>Prix clairs, taxes en sus</span><span>Certifié Labocosmetica</span></div>
+  <div class="mq" role="region" aria-label="Nos services"><div class="mqt"><ul><li>Remise à neuf</li><li>Nettoyage intérieur</li><li>Nettoyage extérieur</li><li>Décontamination</li><li>Scellant à peinture</li><li>Nano-céramique</li><li>Pellicule pare-pierre (PPF)</li></ul><ul aria-hidden="true"><li>Remise à neuf</li><li>Nettoyage intérieur</li><li>Nettoyage extérieur</li><li>Décontamination</li><li>Scellant à peinture</li><li>Nano-céramique</li><li>Pellicule pare-pierre (PPF)</li></ul></div></div>
 </div>
 
 <section id="projets"><div class="w">
@@ -923,6 +933,12 @@ Certifiés|Certified
 Certifié Labocosmetica|Labocosmetica certified
 Nous sommes certifiés Labocosmetica, une marque professionnelle de produits d'esthétique automobile. Un savoir-faire reconnu, appliqué à chaque traitement.|We are Labocosmetica certified, a professional brand of auto detailing products. Recognized expertise, applied to every treatment.
 Service à domicile partout en Estrie|At-home service everywhere in the Eastern Townships
+Quirion Esthétique|Quirion Esthétique
+— Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
+Scellant à peinture|Paint sealant
+Nos services|Our services
+Nano-céramique|Nano-ceramic coating
+Pellicule pare-pierre (PPF)|Paint protection film (PPF)
 Ce que c'est, ce qu'on peut corriger, les 3 niveaux et notre processus, expliqués simplement.|What it is, what we can correct, the 3 levels and our process, explained simply.
 Voir les détails|See details
 Masquer les détails|Hide details
