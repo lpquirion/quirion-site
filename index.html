@@ -1645,7 +1645,7 @@ requestAnimationFrame(()=>requestAnimationFrame(()=>pl.classList.add("run")));
 function endPl(){if(gone)return;gone=1;pl.classList.add("fin");setTimeout(()=>{pl.classList.add("out");document.documentElement.classList.remove("pl-on");setTimeout(()=>pl.remove(),1100)},350)}
 Promise.all([document.fonts?document.fonts.ready:0,new Promise(r=>document.readyState==="complete"?r():addEventListener("load",r))]).then(()=>setTimeout(endPl,Math.max(0,600-(performance.now()-t0))));
 setTimeout(endPl,2000);
-const PG={accueil:[".hero","#certif","#saisons"],projets:["#projets"],services:["#services"],forfaits:["#forfaits"],apropos:["#apropos","#zone"],faq:["#faq"],contact:["#contact"]};
+const PG={accueil:[".hero","#certif","#services","#saisons"],projets:["#projets"],services:["#services"],forfaits:["#forfaits"],apropos:["#apropos","#zone"],faq:["#faq"],contact:["#contact"]};
 const ALL=[...new Set(Object.values(PG).flat())];
 document.querySelectorAll(".nav ul a").forEach(a=>a.dataset.p=a.getAttribute("href").slice(1).replace("top","accueil"));
 function go(p,anchor,nopush){
