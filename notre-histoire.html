@@ -292,6 +292,16 @@ a.ns-t i{color:#f5b301;letter-spacing:.14em;font-size:1rem}
 @media(max-width:760px){.ns-p figcaption{left:14px;right:14px;bottom:14px}.ns-p figcaption b{font-size:1.35rem}.ns-p:first-child figcaption b{font-size:1.9rem}.ns-p figcaption span{font-size:.62rem;letter-spacing:.12em}.ns-story-g,.ns-head{grid-template-columns:1fr}.ns-people{grid-template-columns:1fr 1fr}.ns-people .ns-p:first-child{grid-column:1/-1;aspect-ratio:4/5}}
 @media(max-width:520px){.ns-trust-g,.ns-van-g,.ns-kit{grid-template-columns:1fr}.ns-v1 img,.ns-v2 img{min-height:0;height:auto}}
 @media(prefers-reduced-motion:reduce){.ns-p img{transition:none}}
+.ns-rev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:20px}
+.ns-r{margin:0;padding:28px 26px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:#111;display:flex;flex-direction:column;gap:16px}
+.ns-r i{font-style:normal;color:#f5b301;letter-spacing:.14em}
+.ns-r blockquote{margin:0;padding:0;border:0;font-size:1rem;line-height:1.7;color:rgba(255,255,255,.9);flex:1}
+.ns-r figcaption{display:flex;flex-direction:column;gap:3px}
+.ns-r figcaption b{font-weight:600}
+.ns-r figcaption span{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.ns-revl{display:inline-block;margin-top:26px;color:#fff;text-decoration:none;border-bottom:1px solid var(--red);padding-bottom:3px;font-size:.88rem;letter-spacing:.06em}
+.ns-revl:after{content:" →";color:var(--red)}
+@media(max-width:900px){.ns-rev{grid-template-columns:1fr}}
 .trust{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
 .trust li{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
 .trust li:before{content:"✓";color:var(--red);font-weight:600;margin-right:9px}
@@ -598,7 +608,7 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
 <section class="ns-story"><div class="ns-w ns-story-g">
   <p class="ns-big">Un lavage rapide ne suffit pas pour un véhicule qu'on aime. On a donc choisi de venir <em>à vous.</em></p>
   <div class="ns-story-t">
-    <p>Quirion Esthétique est née à Sherbrooke d'une idée simple : offrir le soin d'un atelier de détail, directement dans votre entrée. Depuis plus de 5 ans, on se déplace partout à Sherbrooke, à Magog et dans les environs.</p>
+    <p>Quirion Esthétique est née d'une idée simple : offrir le soin d'un atelier de détail, directement dans votre entrée. Depuis plus de 5 ans, on se déplace partout à Sherbrooke, à Magog et dans les environs.</p>
     <p>Chaque traitement est ajusté à l'état, aux matériaux et aux besoins de votre véhicule. Rien d'inutile, rien de bâclé.</p>
   </div>
 </div></section>
@@ -607,11 +617,17 @@ h1 .badge{font-family:Montserrat,sans-serif;font-weight:500;letter-spacing:.2em}
   <div class="eb">La confiance</div>
   <h2>Pourquoi l'Estrie nous fait <em>confiance</em></h2>
   <div class="ns-trust-g">
-    <a class="ns-t" href="https://g.page/r/CVwPgE22P1R8EBM" rel="noopener"><b>5,0</b><i aria-hidden="true">★★★★★</i><span>Plus de 120 avis Google, tous 5 étoiles.</span></a>
+    <a class="ns-t" href="https://g.page/r/CVwPgE22P1R8EBM" rel="noopener"><b>5,0</b><i aria-hidden="true">★★★★★</i><span>Plus de 100 avis Google, tous 5 étoiles.</span></a>
     <div class="ns-t"><b>5+</b><i>ans</i><span>D'expérience auprès des propriétaires de l'Estrie.</span></div>
     <div class="ns-t"><b>Certifiés</b><i>Labocosmetica</i><span>Une équipe formée aux méthodes et aux produits professionnels.</span></div>
     <div class="ns-t"><b>Assurés</b><i>Entièrement</i><span>Votre véhicule et votre propriété sont protégés pendant tout le traitement.</span></div>
   </div>
+  <div class="ns-rev">
+    <figure class="ns-r"><i aria-label="5 étoiles">★★★★★</i><blockquote>Service incroyable par Louis-Philippe ! Minutieux et professionnel, mon véhicule n’a jamais été aussi propre il est comme neuf !! Merci et je recommande fortement ces services à tout les propriétaires de véhicule de luxes 🤝</blockquote><figcaption><b>Alex O.</b><span>Porsche · entretien à domicile</span></figcaption></figure>
+    <figure class="ns-r"><i aria-label="5 étoiles">★★★★★</i><blockquote>Service et qualité du travail incroyable ! Vient de faire le traitement de nanocéramique sur mon véhicule neuf, est revenu plus beau quand dans le show room du concessionnaire ! Très méticuleux, attention aux détails, et un passionné ! J’ai déjà un RV au printemps prochain pour mon autre véhicule !</blockquote><figcaption><b>Daniel P.</b><span>Chevrolet Blazer SS · nano-céramique</span></figcaption></figure>
+    <figure class="ns-r"><i aria-label="5 étoiles">★★★★★</i><blockquote>Service impeccable, ma voiture est comme neuve et mieux encore. Je suis pleinement satisfaite. Merci</blockquote><figcaption><b>Mylene B.</b><span>Polissage et nano-céramique</span></figcaption></figure>
+  </div>
+  <a class="ns-revl" href="https://g.page/r/CVwPgE22P1R8EBM" rel="noopener">Lire tous nos avis sur Google</a>
 </div></section>
 
 <section class="ns-team"><div class="ns-w">
@@ -952,6 +968,12 @@ Quirion Esthétique|Quirion Esthétique
 — Optez pour les standards les plus élevés en Estrie.|— Choose the highest standards in the Eastern Townships.
 Scellant à peinture|Paint sealant
 Nos services|Our services
+Avis Google vérifiables|Verifiable Google reviews
+Lire tous nos avis sur Google|Read all our Google reviews
+Quirion Esthétique est née d'une idée simple : offrir le soin d'un atelier de détail, directement dans votre entrée. Depuis plus de 5 ans, on se déplace partout à Sherbrooke, à Magog et dans les environs.|Quirion Esthétique was born from a simple idea: bring detail-shop care right to your driveway. For more than 5 years, we have been coming to you everywhere in Sherbrooke, Magog and the surrounding area.
+Polissage et nano-céramique|Polishing and nano-ceramic coating
+Chevrolet Blazer SS · nano-céramique|Chevrolet Blazer SS · nano-ceramic coating
+Porsche · entretien à domicile|Porsche · at-home maintenance
 L'esthétique automobile de luxe, à domicile, partout en Estrie.|Luxury auto detailing at your home, everywhere in the Eastern Townships.
 Un lavage rapide ne suffit pas pour un véhicule qu'on aime. On a donc choisi de venir|A quick wash isn't enough for a vehicle you love. So we chose to come
 à vous.|to you.
@@ -959,7 +981,7 @@ Quirion Esthétique est née à Sherbrooke d'une idée simple : offrir le soin d
 La confiance|Trust
 Pourquoi l'Estrie nous fait|Why the Eastern Townships
 confiance|trust us
-Plus de 120 avis Google, tous 5 étoiles.|More than 120 Google reviews, all 5 stars.
+Plus de 100 avis Google, tous 5 étoiles.|More than 100 Google reviews, all 5 stars.
 ans|years
 D'expérience auprès des propriétaires de l'Estrie.|Of experience with vehicle owners in the Eastern Townships.
 Une équipe formée aux méthodes et aux produits professionnels.|A team trained in professional methods and products.
@@ -984,7 +1006,6 @@ Les gens derrière|The people behind
 chaque fini|every finish
 Une équipe locale, formée aux mêmes méthodes et aux mêmes standards. Peu importe qui se présente chez vous, le résultat est le même.|A local team trained in the same methods and the same standards. Whoever shows up at your door, the result is the same.
 Ce que disent nos clients|What our clients say
-120+ avis,|120+ reviews,
 tous 5 étoiles|all 5 stars
 Voir tous nos avis Google|See all our Google reviews
 Le propriétaire|The owner
@@ -993,7 +1014,6 @@ Réserver avec notre équipe|Book with our team
 Pourquoi l'Estrie nous confie|Why the Eastern Townships trust us with
 ses véhicules|their vehicles
 Une équipe formée, certifiée Labocosmetica et assurée, qui se déplace chez vous à Sherbrooke, à Magog et dans les environs depuis plus de 5 ans.|A trained, Labocosmetica-certified and insured team that has been coming to you in Sherbrooke, Magog and the surrounding area for more than 5 years.
-120+ avis Google|120+ Google reviews
 De la demande au fini impeccable,|From request to flawless finish,
 en 4 étapes|in 4 steps
 Votre demande|Your request
